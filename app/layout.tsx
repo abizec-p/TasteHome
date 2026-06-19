@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/navigation";
 import Header from "@/components/header";
 
+
 export const metadata: Metadata = {
   title: "TasteHome - Food Marketplace App",
   description: "Name of the app is tastehome",
