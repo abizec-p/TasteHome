@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/navigation";
 import Header from "@/components/header";
+import Filters from "@/components/filter";
 
 
 export const metadata: Metadata = {
@@ -22,13 +23,17 @@ export default function RootLayout({
             {" "}
             <Header  />
           </div>
-          <div className=" relative flex  h-screen">
+          <div className=" relative flex h-full">
             <div className="fixed z-20  ">
             <NavBar />
             </div>
             <div className=" flex-1 z-10 pl-80 h-full bg-gray-100"> {children}</div>
+            <div className="fixed flex-1 h-full z-20 top-20 right-5  ">
+              <Filters/>
+            </div>
           </div>
         </div>
+        <div className="z-30 bg-white">footer</div>
       </body>
     </html>
   );

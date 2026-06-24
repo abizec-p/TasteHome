@@ -10,17 +10,17 @@ export default function Home() {
     <>
          <div className="">
             <h1 className="text-2xl p-5 uppercase font-bold text-green-700">A marketplace for homemade food</h1>
-        <h1 className="pl-5 text-lg">Latest Listing you may like</h1>
+        <h1 className="pl-5 text-md text-black/60 pb-5">Latest Listing you may like</h1>
       </div>
-      <div className="justify-center  flex flex-wrap gap-10">
+      <div className="justify-center pr-65  flex flex-wrap gap-5">
         {data.map((data,index)=>(
-            <div  key={index} className=" rounded overflow-hidden bg-white shadow-md">
+            <div  key={index} className="w-70 h-80 rounded overflow-hidden bg-white shadow-md">
                 <Image
                 src={data.image}
                 alt={data.name} 
-                width={250}  
+                width={285}  
                 height={200}         
-                className="w-65 h-45"/>
+                className="w-70 h-45"/>
                                 <h1 className="font-bold capitalize py-2 px-5">{data.name}</h1>
 
                
