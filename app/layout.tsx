@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-screen h-full ">
+      <body className="max-w-screen  h-full ">
         <div>
           <div  className="sticky z-20 top-0 w-full ">
             {" "}
